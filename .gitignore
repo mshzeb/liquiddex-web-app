@@ -1,0 +1,29 @@
+# Ignore Mac system files
+.DS_store
+.DS_Store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore SASS config-files
+.sass-cache
+
+# dotenv environment variable files
+.env
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# gatxby files
+.cache/
+
+# Optional npm cache directory
+.npm

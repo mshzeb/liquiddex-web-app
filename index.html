@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidDEX Web App</title>
+    
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- ======================================================= -->
+</head>
+<body>
+  <nav class="NavbarItems">&nbsp;&nbsp;
+      <img src="./assets/img/LiquidDEX-Logo-candles-48x32.png" alt="liquidDEX-candle" />&nbsp;&nbsp;
+      <img src="./assets/img/LiquidDex-logo-wht.png" alt="liquidDEX-logo" width="130" />
+      <ul class="nav-menu">
+          <li>
+              <select style="font-size: 20px;"></select>
+              <a class="nav-links" href="connect.html">connect</a>
+              <!--<a class="nav-links" href="/about">About</a>
+              <a class="nav-links" href="/features">Features</a>
+              -->
+          </li>
+      </ul>
+      <!--<a class="nav-links-mobile" href="#">Login</a>>-->
+      <a class="nav-links" href="login.html">Login</a>
+      <Button class="btn btn-primary btn-medium">Register</Button>
+  </nav>
+
+<!-- ======= main Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <h1>One Platform, </h1>
+        <h1>all Things Crypto</h1>
+        <h2>Open account in a minute, Algo Trade on multiple Exchanges, manage your portfolio,</h2>
+        <h3> </h3>
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <a href="login.html" class="btn-get-started scrollto">LiquidDEX Free Trial</a>
+          <!-- 
+          <a href="https://www.youtube.com/" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          -->
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/img/03-liquidDEX-UI-trading.png" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- End main -->
+
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script>
+        //let btnPopulate = document.querySelector('button');
+        let select = document.querySelector('select');
+        let exchanges = ['Liquiddex', 'Binance', 'Bitfinex', 'Coinbase', 'Coinbasepro', 'huobi', 'FTX', 'Kraken', 'Kucoin'];
+
+        // Populate option tag when page is fully loaded
+        window.addEventListener('load', () => {
+            let exchangeOptions = exchanges.map(exchange => 
+                `<option value=${exchange.toLowerCase()}>${exchange}</option>`)
+                .join('\n');
+
+            select.innerHTML = exchangeOptions;
+        });
+    </script>
+</body>
+</html>
